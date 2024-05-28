@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--clr-04);
+}
+
+:root{
+    --clr-01:#fff;
+    --clr-02:#000;
+    --clr-03:rgb(189, 88, 175);
+    --clr-04:rgb(200, 130, 191);
+}
+
