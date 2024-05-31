@@ -20,7 +20,7 @@ Aqui fiz contato com as primeiras tags que precisei para entregar este
 
   - Id
 
-Para o link referenciando a uma Página da Wikipédia usei a tag e propriedade:
+Para o link referenciando a uma Página da Wikipédia usei a tag e atributos:
 
  - A
 
