@@ -1,45 +1,108 @@
-*{
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background: var(--clr-04);
+:root {
+    --clr-bg: linear-gradient(135deg, rgb(200, 130, 191), rgb(145, 80, 160));
+    --clr-text: #fff;
+    --clr-shadow: rgba(0, 0, 0, 0.3);
+    --clr-highlight: rgb(189, 88, 175);
 }
 
-:root{
-    --clr-01:#fff;
-    --clr-02:#000;
-    --clr-03:rgb(189, 88, 175);
-    --clr-04:rgb(200, 130, 191);
+body {
+    background: var(--clr-bg);
+    color: var(--clr-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
 }
-.main{
-    color: var(--clr-01);
+
+/* Container Principal */
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-    height: 100vh;
-    text-shadow: 2px 2px 5px var(--clr-02);
-}
-.main h1{
-    font-size: 50px;
-}
-.main #img{
-    width: 410px;
-    box-shadow: 5px 8px 20px var(--clr-02);
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px var(--clr-shadow);
 }
 
-.main p{
-    width: 900px;
-    text-align:center;
+.main h1 {
+    font-size: 42px;
+    text-shadow: 2px 2px 8px var(--clr-shadow);
 }
 
-.main a{
-    color: var(--clr-01);
-    text-decoration:underline;
+.main h2 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+/* Imagem */
+#img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 8px 15px var(--clr-shadow);
+    margin-bottom: 20px;
+}
+
+/* Texto */
+.main p {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+/* Curiosidades */
+.info-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: left;
+    max-width: 600px;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-box ul {
+    list-style: none;
+    font-size: 16px;
+}
+
+.info-box li {
+    padding: 5px 0;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: var(--clr-text);
+    background: var(--clr-highlight);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px var(--clr-shadow);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #a64ca6;
+    transform: scale(1.05);
 }
